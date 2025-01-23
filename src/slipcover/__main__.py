@@ -194,7 +194,7 @@ def main():
 
     if args.merge:
         if not args.out: ap.error("--out is required with --merge")
-        return merge_files(args)
+        return merge_files(args, base_path=base_path)
 
 
     file_matcher = sc.FileMatcher()
